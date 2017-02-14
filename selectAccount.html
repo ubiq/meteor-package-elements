@@ -5,9 +5,9 @@
                 <option value="{{address}}" {{selected}}>
                     {{#if isAccount}}🔑{{/if}} {{name}}
                     {{#if balance}}
-                        - {{dapp_formatBalance balance "0,0.00 UNIT"}}
+                        - {{dapp_formatBalance balance "0,0.00 "}} UBQ
                         {{#if isNotEtherUnit}}
-                            ({{dapp_formatBalance balance "0,0.00 UNIT" "ether"}})
+                            ({{dapp_formatBalance balance "0,0.00 " "ether"}} UBQ)
                         {{/if}}
                     {{/if}}
                 </option>
